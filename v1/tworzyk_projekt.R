@@ -1,4 +1,4 @@
-macierze = read.table("tworzyk.csv", header = TRUE, sep=";")
+macierze = read.table("macierze1.csv", header = TRUE, sep=";")
 
 wektor = split(macierze, macierze$Numer.macierzy)
 
@@ -26,7 +26,7 @@ wyznacznik = function(x){
   det(macierz(x))
 }
 
-###odwracalnoœæ
+###odwracalnoÅ›Ä‡
 odwracalnosc = function(x){
   if (round(det(macierz(x)) == 0)) {
     paste('Nie')
@@ -68,7 +68,7 @@ elementy_zerowe = function(x){
 }
 
 
-file.copy("Podstawowa preambu³a.tex","tworzyk_projekt.tex", overwrite = TRUE)
+file.copy("Podstawowa preambuÅ‚a.tex","tworzyk_projekt.tex", overwrite = TRUE)
 p = "tworzyk_projekt.tex"
 
 
